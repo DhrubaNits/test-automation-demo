@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uBtRVW-00ka9CMkZapmkuA" Reference="YeFHYRBJyE-e9YM6oWZCEQ/YLAHh5WDikKcWeKEk1pe_g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/userprofile" CVScreenId="75f78089-7510-4fa1-a83e-7bb52b033f20" CvTextArea="787, 547, 326, 17" CvTextArgument="Please find below your profile details" CvType="Text" DesignTimeRectangle="747, 546, 425, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='H3' class='text-white small-text' aaname='Please find below your profile details' check:innerText='Please find below your profile details' /&gt;" Guid="a7c49e4f-0d6e-4b1b-b35a-abc71624e168" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Profile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="933c3979d1ef58fcb4f0418206326b0d.png" xmlns="">0-rGfkhzWnEGhnt-Ippc6_A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

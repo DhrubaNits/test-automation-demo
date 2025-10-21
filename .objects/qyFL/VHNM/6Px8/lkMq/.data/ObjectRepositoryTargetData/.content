@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hshyAGJg9Uq8KnAUKux5Sw" Reference="YeFHYRBJyE-e9YM6oWZCEQ/P6V-I2ITJUekflGdvTMJNA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/loans/result//0/false" DesignTimeRectangle="380, 428, 1159, 145" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white header' aaname='Sorry, at this time you have not been approved for a loan.' check:innerText='Sorry, at this time you have not been approved for a loan.' /&gt;" Guid="95156baf-e4e0-464f-804c-f5ebcfe5bec5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Loan result' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="380, 582, 1159, 72" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='text-center text-white' aaname=' You must be at least 18 years old for a loan and the loan must not exceed 100k. ' check:innerText='You must be at least 18 years old for a loan and the loan must not exceed 100k.' /&gt;" Guid="4a8b9970-cf99-4ede-bdbe-1e3c86eb3cc9" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ed4bff9716469e767a880045907aa6ce.png" xmlns="">0URggoj3E8E27iIZ7U2gs9w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

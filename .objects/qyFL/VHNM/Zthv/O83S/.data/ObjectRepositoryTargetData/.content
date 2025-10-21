@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z1z_tY-aJUK4xP_hR0Znkg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts" CVScreenId="a63ad2fc-9c53-45ff-820a-5000abab40b3" CvElementArea="1325, 221, 27, 29" CvTextArea="1226, 225, 101, 21" CvTextArgument="Products" CvType="ArrowButton" DesignTimeRectangle="1218, 210, 137, 54" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='dropdownMenuLink' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dropdownMenuLink' tag='A' type='' class='nav-link dropdown-toggle text-dark' aaname='Products' check:innerText='Products' /&gt;" Guid="c8e748d5-41ab-4c42-84b5-81cb6765f18f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank - Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="7134ef05ea2692549f1aa14f425ae609.png" xmlns="">0ON4UDR57oUmgjJum11qhxg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

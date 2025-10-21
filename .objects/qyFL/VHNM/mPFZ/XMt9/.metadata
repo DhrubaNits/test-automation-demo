@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Please find below your …",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "XMt9UfVRU0SsDK83rGyYqQ",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/XMt9UfVRU0SsDK83rGyYqQ",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/mPFZwVTFP0mriPiBbntFxg",
+  "Created": "2025-04-27T10:54:50.7000648Z",
+  "Updated": "2025-04-27T10:54:50.7000648Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

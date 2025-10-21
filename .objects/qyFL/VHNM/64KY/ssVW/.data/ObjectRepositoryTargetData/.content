@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DcOs8qeYaUSkPzavBXqY4w" Reference="YeFHYRBJyE-e9YM6oWZCEQ/ssVWKtUcLEmaCCUj1PLCfQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" CVScreenId="02d53923-1208-437c-b88e-89c2f71781cb" CvElementArea="540, 878, 131, 65" CvTextArea="569, 899, 71, 25" CvTextArgument="Sign In" CvType="Button" DesignTimeRectangle="543, 880, 125, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-white col-md-12' aaname='Sign In' check:innerText='Sign In' /&gt;" Guid="d157a1c0-b8bf-46bb-9ca1-cfd46b6751c6" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-*Welcome' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="c954cf34d257a6094819506dca34d9b1.png" xmlns="">0xsxen8I5gkiXP5to2_2q9A</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

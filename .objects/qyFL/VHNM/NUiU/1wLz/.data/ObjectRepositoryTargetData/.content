@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pKAQiTiZJUSIBt5iBDvqNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts" CVScreenId="50f61a6a-df7a-4146-8756-d8c21e5abe13" CvElementArea="1325, 221, 27, 29" CvTextArea="1226, 225, 101, 21" CvTextArgument="Products" CvType="ArrowButton" DesignTimeRectangle="1218, 210, 137, 54" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='dropdownMenuLink' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dropdownMenuLink' tag='A' type='' class='nav-link dropdown-toggle text-dark' aaname='Products' check:innerText='Products' /&gt;" Guid="f1b2f9d3-65bd-4132-9f87-6e1af074adb4" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="7134ef05ea2692549f1aa14f425ae609.png" xmlns="">0FQN7XptvgEu9A2-FunzaWw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

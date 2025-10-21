@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1VbK6mZdRU-XkxWRqePn2w" Reference="YeFHYRBJyE-e9YM6oWZCEQ/whPiqkpD-kCBVEwlBQPqsw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/mobile-banking" CVScreenId="7a81e955-ad68-46c2-b85c-0089194b9438" CvTextArea="700, 704, 514, 46" CvTextArgument="Control At Your Fingertips" CvType="Text" DesignTimeRectangle="704, 699, 511, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' aaname='Control At Your Fingertips' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Control At Your Fingertips' check:innerText='Control At Your Fingertips' /&gt;" Guid="3f4af486-866a-4b98-8563-5314d180b268" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Mobile' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0cd5dce6e61a96a6f087c7dbcffec497.png" xmlns="">0oPCEV0eZpEmTYc7KdOZYrw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

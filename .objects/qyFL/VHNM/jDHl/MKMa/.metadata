@@ -1,0 +1,14 @@
+﻿{
+  "Name": "'Loan ID'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "MKMaNru0lEmrZ9xe_15zmg",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/MKMaNru0lEmrZ9xe_15zmg",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/jDHlpd_n7Em6oaZ7irk5Zg",
+  "Created": "2025-04-27T10:53:09.0870471Z",
+  "Updated": "2025-04-27T10:53:09.0870471Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

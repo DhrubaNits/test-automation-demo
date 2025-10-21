@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="B16z9lpS80OatiV24-fzfg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts/transfer-money" CVScreenId="70c67cf7-35bf-4914-a4cb-d733d1149fe3" CvTextArea="1101, 731, 68, 20" CvTextArgument="$94.00" CvType="Text" DesignTimeRectangle="622, 721, 675, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='amountTransferred' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='amountTransferred' tag='INPUT' type='number' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='How much would you like to transfer?' aaname='' /&gt;" Guid="a606812e-5fe5-4a90-9c4f-7aece4c64c4c" IsResponsive="True" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Transfer money' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="622, 697, 56, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Amount' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Amount' tag='LABEL' type='' class='uibank-label' check:innerText='Amount' /&gt;" Guid="3f00ed88-6c2f-4db9-b6ee-2dc99db62c20" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="062d2dcb122e3c4a5ae5c09bdf74a794.png" xmlns="">0uJbDhKGTN0m71G9uI4FgTg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

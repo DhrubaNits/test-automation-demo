@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kIbmywkfikCiRnegMvH2tg" Reference="YeFHYRBJyE-e9YM6oWZCEQ/Hqp_4uDF5EGm3arAGJYV9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/register-account" CVScreenId="5c9411fa-d0fc-4041-a00d-6d1ffe8e0dfc" CvTextArea="767, 281, 381, 71" CvTextArgument="Registration" CvType="Text" DesignTimeRectangle="557, 276, 805, 73" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname='Registration' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center' aaname='Registration' check:innerText='Registration' /&gt;" Guid="738a484c-9b9c-4ffa-9911-b824f64495db" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="67fbf952173181242658dfb41f09c352.png" xmlns="">0dLuC3sKsgE2nICIO_au_eA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

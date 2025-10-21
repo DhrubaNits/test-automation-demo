@@ -1,0 +1,14 @@
+﻿{
+  "Name": "'Review'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "R19yGkZIBEe-VmPJZsO7hg",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/R19yGkZIBEe-VmPJZsO7hg",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/U6jm_aWBck2sRcTSWbgZCg",
+  "Created": "2025-04-27T10:55:51.1446993Z",
+  "Updated": "2025-04-27T10:55:51.1446993Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

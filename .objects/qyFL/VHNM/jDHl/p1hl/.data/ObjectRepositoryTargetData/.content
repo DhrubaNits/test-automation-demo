@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wGxAutNAbUGNX1rYShkbdA" Reference="YeFHYRBJyE-e9YM6oWZCEQ/JMj67rKsxECglhhkhWPPCw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/loans/detailView/true/680dca2f8534b8480b919994/5/100000/8/30/20000/someone@sample.com" CVScreenId="a603e659-4b54-4de5-89f4-1727be0dddca" CvTextArea="824, 505, 372, 25" CvTextArgument="680dca2f8534b8480b919994" CvType="Text" DesignTimeRectangle="827, 501, 369, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="[&quot;&lt;webctrl id='quoteID' tag='SPAN' innertext='&quot; + testDataQueueItem.FirstOrDefault(Function(item) item.Content.ContainsKey(&quot;LoanID&quot;)).Content(&quot;LoanID&quot;).ToString() + &quot;' /&gt;&quot;]" FuzzySelectorArgument="&lt;webctrl id='quoteID' tag='SPAN' type='' class='' aaname='680dca2f8534b8480b919994' check:innerText='680dca2f8534b8480b919994' /&gt;" Guid="923436be-8f16-4f37-b64f-b04a0991b1a1" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan details' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cebf3c7b93687f204615d1ec3a718d46.png" xmlns="">09GO4M-NICUWrU19-mPS2xA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

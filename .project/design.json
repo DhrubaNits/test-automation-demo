@@ -1,0 +1,16 @@
+{
+  "Tags": [
+    {
+      "Key": "smoke"
+    },
+    {
+      "Key": "e2e"
+    },
+    {
+      "Key": "qa"
+    }
+  ],
+  "SeparateRuntimeDependencies": false,
+  "IncludeSources": true,
+  "ConnectorKeys": []
+}

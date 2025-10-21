@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Help",
+  "Type": "Screen",
+  "Id": "FbJF_-Cd9E6KMmJiloTLbg",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/FbJF_-Cd9E6KMmJiloTLbg",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/VHNMm4h_-EegaF8D1dp3cQ",
+  "Created": "2025-04-27T10:50:48.07355Z",
+  "Updated": "2025-04-27T10:50:48.07355Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

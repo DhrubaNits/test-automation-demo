@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eOnKkVyrS0mhN-D9Sk1p2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/loans/apply" DesignTimeRectangle="641, 770, 636, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='term' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='term' tag='SELECT' type='number' class='form-control uibank-input select-color ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="a1ef98e5-9f38-4979-962d-4752d3a20897" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan Apply' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="641, 746, 74, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Loan Term' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Loan Term' tag='LABEL' type='' class='uibank-label' check:innerText='Loan Term' /&gt;" Guid="8faf426c-329c-4e4f-a920-627de0b5f461" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="7aa5521c0f2f1f94b09dfd82acc196b9.png" xmlns="">0CuiKHI4vsUCq37pl1K2LtQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

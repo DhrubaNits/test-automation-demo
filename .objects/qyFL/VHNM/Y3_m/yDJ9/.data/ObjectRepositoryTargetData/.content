@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VdxsVf0AxkyoAmQmyxxBGw" Reference="YeFHYRBJyE-e9YM6oWZCEQ/-meESA9-4Eq5suyyg5P_aw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/loans/result/680dc7728534b8480b919983/8/true" CVScreenId="95a99e82-0ef9-465d-8167-c5dc04574309" CvTextArea="734, 670, 448, 28" CvType="AnyWordGroup" DesignTimeRectangle="377, 667, 1165, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='loanID' tag='H4' innertext=' {0} ' /&gt;&quot;, loanId)]" FuzzySelectorArgument="&lt;webctrl id='loanID' tag='H4' type='' class='text-black' /&gt;" Guid="94e3f9f3-cc6a-4401-8add-cc707cc6e742" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank-Loan result' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="95a99e82-0ef9-465d-8167-c5dc04574309" CvTextArea="836, 629, 245, 23" CvTextArgument="Your new loan ID is:" CvType="Text" DesignTimeRectangle="377, 627, 1165, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='H5' class='text-white' aaname=' Your new loan ID is: ' check:innerText='Your new loan ID is:' /&gt;" Guid="b3b78988-05e8-4c38-9905-172bdba3d85a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1abdec8edbd0cfbaccb414ed197ac44b.png" xmlns="">0uG8LMDWUnUeDGC3v4Pnt9g</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="loanId" />
+    </scg:List>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

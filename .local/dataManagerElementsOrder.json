@@ -1,0 +1,407 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Apply For A Loan.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "loanId",
+        "loanData",
+        "email",
+        "loadApproved",
+        "browserType"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Apply For New Account.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "congratulationsDisplayed",
+        "nickName",
+        "accountNameDisplayed",
+        "expectedOpeningBalance",
+        "newAccountData",
+        "browserType"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC04 -  Verify that user is able to Apply For A Loan.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isWelcomeDisplayed&Sequence_1",
+        "isLoanApproved&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Register_For_Account.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "registrationHeader",
+        "successRegistration",
+        "userName",
+        "email",
+        "browserType",
+        "registerData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC03 - Verify Apply for New Account Functionality.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isCongratulationDisplayed&Sequence_1",
+        "isAccountNameDisplayed&Sequence_1",
+        "isExpectedOpeningBalance&Sequence_1",
+        "isWelcomeDisplayed&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Apply For A Loan_ineligible_Loan.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "loanCancelled",
+        "browserType",
+        "email",
+        "loanData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Loan Status.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "testDataQueueItem&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "browserType",
+        "loanLookUp",
+        "loanIdMatched",
+        "retrieveLoanLoaded"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC06 - Verify that clicking 'Retrive oan Details' loads the Loan Details page and displays the correct Loan ID.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isLoanLookUpLoaded&Sequence_1",
+        "isLoanIdMatched&Sequence_1",
+        "isLoanDetailsPageLoaded&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC05 - Verify that loan is rejected when applicant is below 18 years old or loan amount exceeds 100k.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isLoanCancelled&Sequence_1",
+        "isWelcomeDisplayed&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Transfer_Fund.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "browserType",
+        "reviewPopUp",
+        "successTransfer"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC07 - Verify transfer fund functionality.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isTransferSuccess&Sequence_1",
+        "isReviewPopupAppears&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Help.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "browserType",
+        "helpLoaded",
+        "helpSuccess"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC08 - Verify that the user is able to submit a query via Help page.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isHelpSuccess&Sequence_1",
+        "isHelpLoaded&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Credit Cards.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "browserType",
+        "creditApplySuccess",
+        "creditCardPageLoaded"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC09 - Verify user can navigate to Credit Card Products and apply for UiBank Travel Rewards Card.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isCreditApplySuccess&Sequence_1",
+        "isCreditPageLoaded&Sequence_1",
+        "isWelcomeDisplayed&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Mobile_Banking.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "descriptionPresent",
+        "controlFingerText",
+        "browserType"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC10 - Verify Mobile Banking page is displayed under products.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isHeaderDisplayed&Sequence_1",
+        "isDescriptionDisplayed&Sequence_1",
+        "isWelcomeDisplayed&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Profile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "profileLoaded",
+        "browserType"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC11 - Verify profile page is displayed successfully.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isProfileLoaded&Sequence_1",
+        "isWelcomeDisplayed&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "APIS/Get accounts.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "responseCode&Sequence_1",
+        "jsonString&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC02 - Verify Successful Login for UiBank.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isWelcomeDisplayed&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case UI/TC01  - Verify Register For Account link on UiBank login page.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isRegistrationPageLoaded&Sequence_1",
+        "isRegistrationSuccess&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "test_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "APIS/Get accountfilter.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "JsonArray&Sequence_1",
+        "jsonString&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".templates/TestExecutionTemplate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Utility/TearDown.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "browserType"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Application_Launch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "browserType"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case API/API TC12 Get account.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case API/API TC14 Get accountfilter.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "APIS/POST newquote.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "responseCode&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case API/API TC13 Post newquote.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "APIS/Get Quotes.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jsonString&Sequence_1",
+        "JsonArray&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test Case API/API TC15 Get Quotes.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Workflow/Application_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "password&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "welcomeDisplayed",
+        "browserType",
+        "loginData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

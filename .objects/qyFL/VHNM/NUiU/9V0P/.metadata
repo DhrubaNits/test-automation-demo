@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Control At Your Fingert…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "9V0PpIx86UC9ez5fopQpSg",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/9V0PpIx86UC9ez5fopQpSg",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/NUiUB2a5XE6aiCuzOEkvLA",
+  "Created": "2025-04-27T10:54:09.3486202Z",
+  "Updated": "2025-04-27T10:54:09.3486202Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

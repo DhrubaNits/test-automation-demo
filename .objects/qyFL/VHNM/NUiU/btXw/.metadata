@@ -1,0 +1,14 @@
+﻿{
+  "Name": "With UiBank, you can ac…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "btXw3AQFBUepNbCiZwDhmg",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/btXw3AQFBUepNbCiZwDhmg",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/NUiUB2a5XE6aiCuzOEkvLA",
+  "Created": "2025-04-27T10:54:15.6317147Z",
+  "Updated": "2025-04-27T10:54:15.6317147Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

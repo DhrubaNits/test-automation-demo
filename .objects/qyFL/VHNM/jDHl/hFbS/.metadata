@@ -1,0 +1,14 @@
+﻿{
+  "Name": "'Loan Status →'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "hFbS77JmOEqM1kDoO1kF4w",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/hFbS77JmOEqM1kDoO1kF4w",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/jDHlpd_n7Em6oaZ7irk5Zg",
+  "Created": "2025-04-27T10:52:51.8308747Z",
+  "Updated": "2025-04-27T10:52:51.8308747Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

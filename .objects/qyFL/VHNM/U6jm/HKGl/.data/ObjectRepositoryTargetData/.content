@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8bNe5mgwQUyYewfgZvX_Iw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts/transfer-money" DesignTimeRectangle="622, 622, 675, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='toAccount' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='toAccount' tag='SELECT' type='' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='To' /&gt;" Guid="55278b3f-62c2-49c8-8f11-83c71f72627c" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Transfer money' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="622, 599, 16, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='To' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='To' tag='LABEL' type='' class='uibank-label' check:innerText='To' /&gt;" Guid="bc3ce93b-e89a-4295-a9e2-e5677f320594" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="b1a75cec80fbfcf4367598551a066b19.png" xmlns="">0u3AnBVGOgUmmAIuJZd9YDA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

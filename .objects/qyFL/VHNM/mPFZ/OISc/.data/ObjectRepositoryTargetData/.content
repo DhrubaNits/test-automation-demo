@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zHd-uLgQP0OW3AfGCIcrsg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts" CVScreenId="84bb5fb5-734c-40b7-b206-efa57fdb3c15" CvTextArea="1434, 225, 70, 21" CvTextArgument="Profile" CvType="Text" DesignTimeRectangle="1425, 210, 89, 54" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Profile' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Profile' tag='A' type='' class='nav-link text-dark' check:innerText='Profile' /&gt;" Guid="c25d753e-5c58-47b0-8fee-0fb567ed20ec" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="59763b462faa5e0293f53b6edea7e657.png" xmlns="">0ZCHtqWdC0UmQoYJJvtqTmA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

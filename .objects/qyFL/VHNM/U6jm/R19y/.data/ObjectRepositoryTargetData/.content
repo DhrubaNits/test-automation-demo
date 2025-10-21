@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nlijRcZp2k6Mr_BzjN6JXw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts/transfer-money" DesignTimeRectangle="889, 829, 140, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Review' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Review' tag='BUTTON' type='button' class='btn btn-white form-button' check:innerText='Review' /&gt;" Guid="f6653386-63cb-451d-8e02-100d91c8f7ce" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Transfer money' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="02668b601e7b347f69bfbbd3577ad01d.png" xmlns="">0Nkocl4MSOkW4tOOpQFphfA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

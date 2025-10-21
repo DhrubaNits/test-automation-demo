@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Credit Cards",
+  "Type": "Screen",
+  "Id": "Zthvy-Cup0uXji1kNxxmIg",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/Zthvy-Cup0uXji1kNxxmIg",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/VHNMm4h_-EegaF8D1dp3cQ",
+  "Created": "2025-04-27T10:48:59.8438318Z",
+  "Updated": "2025-04-27T10:48:59.8438318Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

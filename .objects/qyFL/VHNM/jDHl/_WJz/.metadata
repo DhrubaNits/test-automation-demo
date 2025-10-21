@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Your Loan Details",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "_WJz49wVz0KR-sPaNCSm2A",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/_WJz49wVz0KR-sPaNCSm2A",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/jDHlpd_n7Em6oaZ7irk5Zg",
+  "Created": "2025-04-27T10:53:21.2704642Z",
+  "Updated": "2025-04-27T10:53:21.2704642Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

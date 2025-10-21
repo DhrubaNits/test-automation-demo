@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vDO5Qpji8UmNcvNjkFB7UQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" DesignTimeRectangle="643, 929, 101, 54" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aaname='Register For Account' id='emailHelp' tag='SMALL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Register For Account' id='emailHelp' tag='SMALL' type='' class='form-text text-white' check:innerText='Register For Account' /&gt;" Guid="fc82699f-9ffd-44b7-bcc6-956d16e9c822" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Welcome' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="83e6c4673702d9e997a2a75c921767de.png" xmlns="">0kvBZLnsGNEiDCcHa0058kQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

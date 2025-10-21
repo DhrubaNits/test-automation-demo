@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Register For Account",
+  "Type": "Screen",
+  "Id": "cWqpSrwt5ky73djnrCxxGg",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/cWqpSrwt5ky73djnrCxxGg",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/VHNMm4h_-EegaF8D1dp3cQ",
+  "Created": "2025-04-26T19:07:23.1481832Z",
+  "Updated": "2025-04-26T19:07:23.1481832Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

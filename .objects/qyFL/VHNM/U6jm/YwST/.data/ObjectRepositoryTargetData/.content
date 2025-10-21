@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="l8tOYZafJUqJ4gZ6brBBqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts/transfer-money" CVScreenId="70c67cf7-35bf-4914-a4cb-d733d1149fe3" CvTextArea="992, 561, 177, 18" CvTextArgument="Account Balance:" CvType="Text" DesignTimeRectangle="622, 524, 675, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='fromAccount' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fromAccount' tag='SELECT' type='' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='From' /&gt;" Guid="89889580-d436-4fa9-9065-6106e88d0a48" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Transfer money' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="622, 501, 35, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='From' check:innerText='From' /&gt;" Guid="ad673063-ea3f-4eab-8058-58d960ecd608" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="9352a678ee6056481e35d87b8869657a.png" xmlns="">0Zv5IOIvlL06Q7eeliJWCYA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

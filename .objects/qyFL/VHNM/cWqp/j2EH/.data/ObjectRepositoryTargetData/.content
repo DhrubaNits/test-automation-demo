@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="s_K0CAQHzUuFPW7v7Xs_ew" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/register-account" CVScreenId="86ac34a2-74b7-46b0-a6e0-08658ce4aeb5" CvElementArea="570, 911, 375, 69" CvType="InputBox" DesignTimeRectangle="572, 911, 372, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='numberOfDependents' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='numberOfDependents' tag='INPUT' type='number' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='How many dependents do you claim?' aaname='' /&gt;" Guid="310c3b10-473a-4358-98e5-6b6d4e4f47a2" IsResponsive="True" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="86ac34a2-74b7-46b0-a6e0-08658ce4aeb5" CvTextArea="569, 891, 165, 17" CvTextArgument="Number of Dependents" CvType="Text" DesignTimeRectangle="572, 888, 163, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Number of Dependents' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Number of Dependents' tag='LABEL' type='' class='uibank-label' check:innerText='Number of Dependents' /&gt;" Guid="7857f6c6-9f7c-4cd2-ad04-03ecc5fadb17" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="bd520be0bd6137a07eb385dabb0eda88.png" xmlns="">09lvGRR6wsUC41KlDUx06aQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

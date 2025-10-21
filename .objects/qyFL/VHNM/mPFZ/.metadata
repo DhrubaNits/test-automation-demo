@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Profile",
+  "Type": "Screen",
+  "Id": "mPFZwVTFP0mriPiBbntFxg",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/mPFZwVTFP0mriPiBbntFxg",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/VHNMm4h_-EegaF8D1dp3cQ",
+  "Created": "2025-04-27T10:54:35.5846854Z",
+  "Updated": "2025-04-27T10:54:35.5846854Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

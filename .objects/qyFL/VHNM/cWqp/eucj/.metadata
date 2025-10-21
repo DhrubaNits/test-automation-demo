@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Check if the 'Registration' header is visible on Registration page",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "eucj4YvUsk2md6TZP_K2CA",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/eucj4YvUsk2md6TZP_K2CA",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/cWqpSrwt5ky73djnrCxxGg",
+  "Created": "2025-04-26T19:07:37.0993306Z",
+  "Updated": "2025-04-26T19:07:37.0993306Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

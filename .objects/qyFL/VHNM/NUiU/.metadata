@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Mobile Banking",
+  "Type": "Screen",
+  "Id": "NUiUB2a5XE6aiCuzOEkvLA",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/NUiUB2a5XE6aiCuzOEkvLA",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/VHNMm4h_-EegaF8D1dp3cQ",
+  "Created": "2025-04-27T10:53:48.0623163Z",
+  "Updated": "2025-04-27T10:53:48.0623163Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

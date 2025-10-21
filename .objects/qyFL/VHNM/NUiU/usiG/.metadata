@@ -1,0 +1,14 @@
+﻿{
+  "Name": "'Mobile Banking'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "usiGRgxl_UaVkfWpWKuv6Q",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/usiGRgxl_UaVkfWpWKuv6Q",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/NUiUB2a5XE6aiCuzOEkvLA",
+  "Created": "2025-04-27T10:54:04.1027362Z",
+  "Updated": "2025-04-27T10:54:04.1027362Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

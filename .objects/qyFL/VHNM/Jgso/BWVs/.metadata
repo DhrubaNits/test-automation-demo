@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Expected Opening Balance",
+  "Type": "Element",
+  "Id": "BWVsmuNq8EKdoBR7vh6IBA",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/BWVsmuNq8EKdoBR7vh6IBA",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/JgsoBXre5ku8O38exfLREA",
+  "Created": "2025-04-26T18:46:55.3626705Z",
+  "Updated": "2025-04-26T18:46:55.3626705Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

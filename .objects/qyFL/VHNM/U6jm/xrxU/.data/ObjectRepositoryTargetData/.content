@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FzQZnVyK5EmfEtEAUepLJA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts/transfer-money" DesignTimeRectangle="857, 620, 255, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Confirm Transfer →' parentid='exampleModal' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Confirm Transfer →' parentid='exampleModal' tag='BUTTON' type='button' class='btn btn-orange' check:innerText='Confirm Transfer →' /&gt;" Guid="a2363c92-e2e5-4407-9f11-639172cfc18b" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Transfer money' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1064, 637, 20, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='→' parentid='exampleModal' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='→' parentid='exampleModal' tag='SPAN' type='' class='' check:innerText='→' /&gt;" Guid="252b1c1d-b965-4bbd-8502-b11ee9ee9d4b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="96fb342ea175063d3f6e2ce0fc1c5999.png" xmlns="">0YjXL7NFWTUW5wVGalyzxRQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

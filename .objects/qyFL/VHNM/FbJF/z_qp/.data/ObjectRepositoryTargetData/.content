@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yb36URjdxkqy9E9kU1nrFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/help" CVScreenId="9a22963d-4df5-4dd0-8b5f-ad270ea750fc" CvElementArea="856, 708, 206, 66" CvTextArea="901, 732, 115, 17" CvTextArgument="Contact Us" CvType="Button" DesignTimeRectangle="859, 710, 200, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='form-button btn btn-xl btn-white' aaname=' Contact Us ' check:innerText='Contact Us' /&gt;" Guid="aa7a91a5-6f16-4770-aafc-a8ce3a3fedbc" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Help' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="22b992ee96a88288810c6748c1f61d10.png" xmlns="">06Z5Z3mWrMEWzCd5Sg9NtEw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

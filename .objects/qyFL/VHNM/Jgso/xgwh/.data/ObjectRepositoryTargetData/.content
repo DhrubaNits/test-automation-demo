@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="P5gIlevce02UQhELm65-2g" Reference="YeFHYRBJyE-e9YM6oWZCEQ/NP2QpaCIU0mxE19jFreXXA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts/account-create-results/56723636/DJ" CVScreenId="3390b309-cc89-4bb4-b5fa-2a9f2a20cab1" CvElementArea="826, 699, 265, 65" CvTextArea="854, 720, 208, 20" CvTextArgument="View Your Accounts" CvType="Button" DesignTimeRectangle="829, 701, 261, 61" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='viewAccounts' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='viewAccounts' tag='DIV' type='' class='text-center btn btn-white form-button' aaname=' View Your Accounts ' check:innerText='View Your Accounts' /&gt;" Guid="df22ef93-3099-4eb0-b659-2901e7ac8105" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Creation Result' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3b6edcdb58e3a0180da1a192536cad2d.png" xmlns="">0mgfeRHiwGU2e1LJJrwjECQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

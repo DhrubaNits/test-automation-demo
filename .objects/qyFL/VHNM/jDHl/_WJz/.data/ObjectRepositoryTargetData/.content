@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Guv2-3j20Eeyiui9mzBnMg" Reference="YeFHYRBJyE-e9YM6oWZCEQ/ZoLhqUXulUWGAEDzKyJtTg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/loans/detailView/true/680dca2f8534b8480b919994/5/100000/8/30/20000/someone@sample.com" CVScreenId="a603e659-4b54-4de5-89f4-1727be0dddca" CvTextArea="741, 350, 436, 46" CvTextArgument="Your Loan Details" CvType="Text" DesignTimeRectangle="618, 343, 683, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' innertext='Your Loan Details ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white' aaname='Your Loan Details ' check:innerText='Your Loan Details' /&gt;" Guid="97a29579-13e8-40a4-b57a-e4b9ac8b94ed" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan details' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f6d7e656c950c884dd541088cb9f3c2c.png" xmlns="">0EILsHfyx40-iyMZ5QGeb-A</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

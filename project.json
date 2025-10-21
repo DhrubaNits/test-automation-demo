@@ -1,0 +1,194 @@
+{
+  "name": "UiBankWebTestAutomation",
+  "projectId": "8c81fabe-3702-4f4d-ad8d-52b8597381bc",
+  "description": "Test automation for UiBank web application using UiPath",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[25.2.1]",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[25.2.1-preview]",
+    "UiPath.WebAPI.Activities": "[1.21.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.161.0",
+  "projectVersion": "1.0.2",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "ExecutionTemplate",
+        "fileName": ".templates\\TestExecutionTemplate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "788a3040-756f-4534-bf0b-ea5e84e52a2e",
+        "dataVariationFilePath": ".variations\\Test Data_Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC01  - Verify Register For Account link on UiBank login page.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fc0dd68a-df01-4e17-8f52-eaafc5c2452f",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC02 - Verify Successful Login for UiBank.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0d9a4c4b-fa97-4202-85bd-d764b47b996e",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC03 - Verify Apply for New Account Functionality.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "11096815-af1a-4466-abc0-a15eedc59c02",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC04 -  Verify that user is able to Apply For A Loan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6f7a35cb-1c06-4b38-b6c4-3beae77cf793",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC05 - Verify that loan is rejected when applicant is below 18 years old or loan amount exceeds 100k.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ed850eda-25f7-42aa-8f99-d019e0b55e11",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC06 - Verify that clicking 'Retrive oan Details' loads the Loan Details page and displays the correct Loan ID.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "43e90233-89e1-43ce-86f6-689540c7170f",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC07 - Verify transfer fund functionality.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4775b9b3-9142-4faf-b4ed-3865b0ccdf5b",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC08 - Verify that the user is able to submit a query via Help page.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2f66908e-41f2-4aa4-8acb-30e4382afdd5",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC09 - Verify user can navigate to Credit Card Products and apply for UiBank Travel Rewards Card.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "91aab780-ff7a-43c2-8617-e9a387fa1862",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC10 - Verify Mobile Banking page is displayed under products.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6616c056-c8ad-4016-87aa-65dff5652257",
+        "dataVariationFilePath": ".variations\\Test Data.json",
+        "executionTemplatePath": ".templates\\TestExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case UI\\TC11 - Verify profile page is displayed successfully.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a53009e7-e94f-4ec5-8d96-879ef5b48f3e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case API\\API TC12 Get account.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f8762ce2-4f4e-4667-8797-8b25ff358f5d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case API\\API TC13 Post newquote.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4ed92ffa-59e2-4119-9747-8e5997beb448",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case API\\API TC14 Get accountfilter.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2a1e4639-14a3-4f7a-85f9-93c0a3a987dd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Case API\\API TC15 Get Quotes.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

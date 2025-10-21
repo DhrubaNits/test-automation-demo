@@ -1,0 +1,289 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Apply_For_New_Account" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="congratulationsDisplayed" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="nickName" Type="InArgument(x:String)" />
+    <x:Property Name="accountNameDisplayed" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="expectedOpeningBalance" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="newAccountData" Type="InArgument(scg:IDictionary(x:String, x:Object))" />
+    <x:Property Name="browserType" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Apply_For_New_Account_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Apply_For_New_Account" sap:VirtualizedContainerService.HintSize="866.4000000000001,3110.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch (Apply For New Account)" sap:VirtualizedContainerService.HintSize="502.4,3087.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Apply For New Account" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="500.8,2584.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="25c086ef-669f-49e5-8721-236e14320687" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,2418.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Apply For New Account''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25c086ef-669f-49e5-8721-236e14320687" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts" CVScreenId="050c225a-cb54-481b-bea3-b3113cdef9a0" ContentHash="5ekQrmRS2kKCkCOVE9CoAQ" CvElementArea="823, 351, 359, 66" CvTextArea="882, 375, 241, 25" CvTextArgument="Apply For New Account" CvType="Button" DesignTimeRectangle="827, 354, 353, 61" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Apply For New Account ' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply For New Account ' tag='DIV' type='' class='btn btn-white card-header-item' check:innerText='Apply For New Account' /&gt;" Guid="81323da0-8ee7-48ed-a526-684bd7d21fb7" InformativeScreenshot="3768ae3e29468b29fb6db9ef916ca68a.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/AAxS_8TGekOw6WrTW7nHnQ" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <Assign DisplayName="Randomly generated Username" sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[nickName]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[(Chr(New Random().Next(65, 91))).ToString() + New String(Enumerable.Range(0, 5).Select(Function(i) Chr(New Random().Next(97, 123))).ToArray())]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Give a Nickname to Your…''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="25c086ef-669f-49e5-8721-236e14320687" Text="[nickName]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts/account-apply" ContentHash="aGmrWxr-pU6HCP5-UY7lwg" DesignTimeRectangle="459, 629, 1000, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='accountNickname' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='accountNickname' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter a nickname for your new account' aaname='Give a Nickname to Your Account' /&gt;" Guid="84ae7f09-22de-4de4-b743-5c617edfc770" InformativeScreenshot="b38c84857e2f95a4025f1527ff09e2bc.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/arbRDZlo3kqyFs2EYSuB2Q" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Apply' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="459, 606, 234, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Give a Nickname to Your Account' check:innerText='Give a Nickname to Your Account' /&gt;" Guid="5c2fb430-f852-4792-966c-9357199037ca" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NSelectItem DisplayName="Select Item ''Type of Account''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Savings" ScopeIdentifier="25c086ef-669f-49e5-8721-236e14320687" Version="V4">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="2">
+                      <x:String>Checking</x:String>
+                      <x:String>Savings</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts/account-apply" ContentHash="t3nowgMbbkKeCIgcULFnYg" DesignTimeRectangle="459, 727, 1000, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='typeOfAccount' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='typeOfAccount' tag='SELECT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-invalid' aaname='Type of Account' /&gt;" Guid="a79c6aa9-3bb5-41b1-b8be-8f15acd17563" InformativeScreenshot="3cae4238ed8a05865fff4125fb3c5eae.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/ViSe77y3D0WV66099zj6ig" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Apply' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="459, 704, 114, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Type of Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Type of Account' tag='LABEL' type='' class='uibank-label' check:innerText='Type of Account' /&gt;" Guid="03fcbfea-bc0c-4d74-9d12-36770b7c30f4" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Apply''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25c086ef-669f-49e5-8721-236e14320687" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts/account-apply" ContentHash="J8CNOgfmGUSyt2rKmVxr-Q" DesignTimeRectangle="659, 835, 600, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn text-center btn-white form-button btn-xl' aaname='Apply' check:innerText='Apply' /&gt;" Guid="5d6fe236-dc87-4cb5-b42b-3b6bf17665e2" InformativeScreenshot="c1d2ae6dab77222b8213d535557fafaf.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/z2xYuUDGEEStetpG8q2f-w" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Apply' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Congratulations!'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[congratulationsDisplayed]" ScopeIdentifier="25c086ef-669f-49e5-8721-236e14320687" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts/account-create-results/56723636/DJ" CVScreenId="3390b309-cc89-4bb4-b5fa-2a9f2a20cab1" ContentHash="0gWL6gn6J0G3EjauiJjBzQ" CvTextArea="694, 455, 527, 66" CvTextArgument="Congratulations!" CvType="Text" DesignTimeRectangle="357, 447, 1205, 72" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname=' Congratulations! ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' aaname=' Congratulations! ' type='' class='text-center text-white header' check:text='Congratulations!' /&gt;" Guid="b419926d-be24-43ca-a936-01dc12be94c3" InformativeScreenshot="fd59288b6240519017b170c414d6b41e.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/L6aZk3aQI06nENZpz_7bQA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Creation Result' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message(Congratulation message)" sap:VirtualizedContainerService.HintSize="433.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Verify if the 'Congratulations!' message is visible on page after new account creation: &quot; &amp; congratulationsDisplayed.ToString()]" />
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Account Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_2" Result="[accountNameDisplayed]" ScopeIdentifier="25c086ef-669f-49e5-8721-236e14320687" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts/account-create-results/56723636/DJ" CVScreenId="3390b309-cc89-4bb4-b5fa-2a9f2a20cab1" ContentHash="-WNsmsLma0iX80u8ZidnOg" CvTextArea="875, 629, 165, 17" CvTextArgument="Account Name: DJ" CvType="Text" DesignTimeRectangle="357, 627, 1205, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='H4' innertext='Account Name: {0}' /&gt;&quot;, nickName)]" FuzzySelectorArgument="[&quot;&lt;webctrl tag='H4' innertext='Account Name: &quot; + nickName + &quot;' type='' class='text-center text-white small-text' aaname='Account Name: ' check:text='Account Name: &quot; + nickName + &quot;' /&gt;&quot;]" Guid="9503b664-93f2-4f95-a387-b048d120c7f3" InformativeScreenshot="0148e335fd9abdcccceacfbd992f790c.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/c9QbnRcuVU6xe7ehucg5cA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Creation Result' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message (Account Name Verification)" sap:VirtualizedContainerService.HintSize="433.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Verify account name displayed after account creation: &quot; + accountNameDisplayed.ToString()]" />
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'View Your Accounts'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="25c086ef-669f-49e5-8721-236e14320687" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts/account-create-results/56723636/DJ" CVScreenId="3390b309-cc89-4bb4-b5fa-2a9f2a20cab1" ContentHash="P5gIlevce02UQhELm65-2g" CvElementArea="826, 699, 265, 65" CvTextArea="854, 720, 208, 20" CvTextArgument="View Your Accounts" CvType="Button" DesignTimeRectangle="829, 701, 261, 61" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='viewAccounts' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='viewAccounts' tag='DIV' type='' class='text-center btn btn-white form-button' aaname=' View Your Accounts ' check:innerText='View Your Accounts' /&gt;" Guid="df22ef93-3099-4eb0-b659-2901e7ac8105" InformativeScreenshot="3b6edcdb58e3a0180da1a192536cad2d.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/xgwhNbcq40G9Js4ve6WxSA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Creation Result' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Expected Opening Balance'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_5" Result="[expectedOpeningBalance]" ScopeIdentifier="25c086ef-669f-49e5-8721-236e14320687" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts" ContentHash="z1GMOjT-GkSA8KoI4C04WA" DesignTimeRectangle="452, 760, 728, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='account-detail-container' tag='DIV' innertext='{0}* ......9460  Account Balance:  $100.00 ' /&gt;&quot;, nickName)]" FuzzySelectorArgument="[&quot;&lt;webctrl class='account-detail-container' tag='DIV' innertext='DJ ......9460  Account Balance:  $100.00 ' type='' aaname='' check:text='&quot; + nickName + &quot;*  Account Balance:  $100.00' /&gt;&quot;]" Guid="2113e456-0bb3-44ed-b573-f0c0f3f34137" InformativeScreenshot="9fd7d29a1b2869b322dae7b8188d16a6.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/BWVsmuNq8EKdoBR7vh6IBA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message (Expected opening balance)" sap:VirtualizedContainerService.HintSize="433.6,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Verify that the opening account balance is $100 after successful acount creation: &quot; +expectedOpeningBalance.ToString()]" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" ContentHash="ubxa_3G0OUSUgWh4_qBVAA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAMAAAALgmiIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABgUExURfpGFvyMbv////7Rxf/z8PtpQv/5+PyumfyAX/x1UftjO/7WzP3Lvf25p/7o4vtdM/2/r/2dhPx6WP2zoPtXLP7u6fpMHf7i2vtvSfyokf7c0/yGZvpSJf2XfP3Ftvyiiq2qGj8AAAMzSURBVHhe7ZvZcqMwEEUJeMMexx7v8fr/fxnAF4O6JRNVSaOZmntekrQIfQxCkqHJHn8rGSGEEEIIqbhhdZSADyg4+MyTUUDBAc0s0MwfmvlDM39o5g/N/EluNiom+E2Q1my7abJstvi7T0qz4wlZsux0RKwjodn2gCQNX4i+SGd2NsSybIF4SzKzyRgpWubiSkhm9oUMHeJ8JjPren/LCi0gmdkVGXqYyVKZ7ZGgT4G2J15mi8JkhLiLI7Zr6Q1atrxLtD3xMlsh2mJ+SI38MvuBeMUZoT6/0PYklVkuRrMac0RLZiaHsyy7mgNaMrMbYh0XtIBkZiO5s+seLSCZmcpsXpkpzcT8JM5lUrN8MUe8mpnMEaMmpVk+mc5quflsallxJzVrOOOnJL2ZC5o10Ixmdv5LsyFtmjXQjGZ2aFZBswaa0QzQrIFmNLNDswqaNdCMZoBmDTSjmR3TrLt//0Q+9pD8ObMS0RZfsxviDUHNZoi2PBB3IT+JsX1QM7kzXzOj/CeomXy5Te5M8rZfBjWT1R9jxB2MsNkL41oOarZEtOXgKB0Dat/Gg/KgZndEX7ieZj2ZYqsXxlPfoGbq9KjSLINn2VuHWV4T1EwVDMwRt7KXhQ9m7rBmqmBAFo31USfTHJjDmslLQD/97lAFZmJnYc0+Ee64o0Wj3uwVVVxhzdRqI9u5Bo6jKq8RqQOb6cqUsb2g6lN9Bnl4A5vp02lXs4jJCSOwmVpuVKzWaOvY7tDWY4q2ltBmtrqx7HTv97bJWs7kNapDhjazVGfVHGbLojjn56KYypEfyEMW3kzNnT/joHpjcDO1HPwZ6pBFMNtbevcgMm1FeLOhf7EhK59rIpjpeWeIg66xj2Pm3dWsk2sUs5FjZLBz0CNxTRQzvds37BxruEhmliJ6B2NR8vkillm+thQRW7g4v15FM8v3t2G38s3donhm1VJnoLed3t7FimlWrTwu7uO2cS/EG+KaVSx+W1Yf85uxLrIS3axiv348NmVZzaerspw9HkvX5WhwxxvxLfIQhzCLA838oZk/NPOHZv7QzB+a+UMzf2jmzz9rdiqTYb+5SQghhJBBsuwbfx+VBGVWUxIAAAAASUVORK5CYII=" InformativeScreenshot="5257312e534b4f8b40bda0dd26c3c8de.jpg" Reference="YeFHYRBJyE-e9YM6oWZCEQ/JgsoBXre5ku8O38exfLREA" Selector="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" Version="V2" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="500.8,225.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message (Apply for New Account failed)" sap:VirtualizedContainerService.HintSize="467.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Apply for New Account failed: &quot;+exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="500.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

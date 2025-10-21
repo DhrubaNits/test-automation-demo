@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GbeiqlTEMEWR2D_WWkP5Aw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvElementArea="571, 789, 373, 69" CvType="InputBox" DesignTimeRectangle="572, 789, 372, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='age' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='age' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter date in MM/DD/YY format' aaname='Date of birth (MM/DD/YY)' /&gt;" Guid="a6bf14b1-09d5-4b1b-9aff-bd583c10ed8e" IsResponsive="True" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="570, 765, 178, 20" CvTextArgument="Date of birth (MM/DD/YY)" CvType="Text" DesignTimeRectangle="572, 765, 176, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Date of birth ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Date of birth ' tag='LABEL' type='' class='uibank-label' check:innerText='Date of birth (MM/DD/YY)' /&gt;" Guid="0f1b410a-df57-4075-a107-9e7e43e552aa" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="b4140016ed3e1bc8a2e6daaaf916ba08.png" xmlns="">0CQJ93hEdeUWgdBL43roNVg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

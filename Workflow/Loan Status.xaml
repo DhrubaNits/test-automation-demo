@@ -1,0 +1,257 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Loan_Status" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:utc="clr-namespace:UiPath.Testing.Core;assembly=UiPath.Testing" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="retrieveLoanLoaded" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="loanIdMatched" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="loanLookUp" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="browserType" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Loan_Status_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing.Activities.TestDataQueues.Enums</x:String>
+      <x:String>UiPath.Testing.Core</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Loan_Status" sap:VirtualizedContainerService.HintSize="847.2,2807.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch (Loan Status)" sap:VirtualizedContainerService.HintSize="484.8,2784" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Loan Status" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,2281.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="a1e9e924-f616-4321-b28f-efef3ce2070e" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2115.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="scg:List(utc:TestDataQueueItem)" Name="testDataQueueItem" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Loan Status →''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1e9e924-f616-4321-b28f-efef3ce2070e" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts" ContentHash="LSKwfK7jMEuBCNyUe1XNVA" DesignTimeRectangle="1320, 831, 167, 86" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Loan Status →' id='applyForLoan' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Loan Status →' id='applyForLoan' tag='A' type='' class='btn apply-button' check:innerText='Loan Status →' /&gt;" Guid="526a1c9f-f484-4c79-95a0-9598f76d822c" InformativeScreenshot="d671a73eafe84587ec814b771b2f281e.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/hFbS77JmOEqM1kDoO1kF4w" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Loan Lookup'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_3" Result="[loanLookUp]" ScopeIdentifier="a1e9e924-f616-4321-b28f-efef3ce2070e" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/lookup" CVScreenId="745c3f5f-5098-4644-b965-c3a0af32d993" ContentHash="ZVUqBHG5bUiVqs--bibW_Q" CvTextArea="737, 315, 444, 75" CvTextArgument="Loan Lookup" CvType="Text" DesignTimeRectangle="610, 304, 699, 84" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' innertext='Loan Lookup' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center title' aaname='Loan Lookup' check:innerText='Loan Lookup' /&gt;" Guid="6bdcb2b8-f218-44e2-a958-d1cb4807fa55" InformativeScreenshot="06bd61cf72f99c5e4ffbdc36ead53319.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/sYvep2osvk2Cd6lvD3ySww" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan Lookup' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message (Verify that clicking 'Loan Status' opens the 'Loan Lookup page)" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Verify that clicking 'Loan Status' opens the 'Loan Lookup page' &quot; + loanLookUp.ToString()]" />
+                <uta:GetTestDataQueueItems ContinueOnError="{x:Null}" IdFilter="{x:Null}" Skip="{x:Null}" TimeoutMs="{x:Null}" Top="{x:Null}" DisplayName="Get Test Data LoanID from queue" sap:VirtualizedContainerService.HintSize="416,226.4" sap2010:WorkflowViewState.IdRef="GetTestDataQueueItems_1" QueueName="LoanID" TestDataQueueItemStatus="All" TestDataQueueItems="[testDataQueueItem]" />
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Loan ID''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="a1e9e924-f616-4321-b28f-efef3ce2070e" Text="[testDataQueueItem.FirstOrDefault(Function(item) item.Content.ContainsKey(&quot;LoanID&quot;)).Content(&quot;LoanID&quot;).ToString()]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/lookup" CVScreenId="0e729ca0-94b6-4f2a-886a-e003fae0a1e3" ContentHash="HNeywCtyhkOUxh_1TORTOQ" CvElementArea="709, 490, 500, 70" CvType="InputBox" DesignTimeRectangle="710, 491, 499, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='quoteID' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='quoteID' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter loan ID here' aaname='' /&gt;" Guid="fc3a1987-4dda-4733-9c9a-9fe0fe43e085" InformativeScreenshot="091b3f64a139e49bebae6282a5c5e74d.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/MKMaNru0lEmrZ9xe_15zmg" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan Lookup' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="0e729ca0-94b6-4f2a-886a-e003fae0a1e3" CvTextArea="709, 471, 54, 13" CvTextArgument="Loan ID:" CvType="Text" DesignTimeRectangle="710, 468, 499, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Loan ID:' check:innerText='Loan ID:' /&gt;" Guid="88650557-934d-4c26-99f1-22e852b828c7" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Retrieve Loan Details''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1e9e924-f616-4321-b28f-efef3ce2070e" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/lookup" CVScreenId="0e729ca0-94b6-4f2a-886a-e003fae0a1e3" ContentHash="wQ0Wl4VpIkGmQ6eNUXyO5Q" CvElementArea="848, 597, 222, 95" CvType="Button" DesignTimeRectangle="850, 599, 219, 91" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-white form-button' aaname='Retrieve Loan Details' check:innerText='Retrieve Loan Details' /&gt;" Guid="2725cc38-06fd-4cad-bd00-277ab3a6db38" InformativeScreenshot="bdab7cc4a0aad1427c0d7cb56783e4d7.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/T5kMybMLc0Of24c7edNz0g" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan Lookup' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Your Loan Details'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[retrieveLoanLoaded]" ScopeIdentifier="a1e9e924-f616-4321-b28f-efef3ce2070e" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/detailView/true/680dca2f8534b8480b919994/5/100000/8/30/20000/someone@sample.com" CVScreenId="a603e659-4b54-4de5-89f4-1727be0dddca" ContentHash="Guv2-3j20Eeyiui9mzBnMg" CvTextArea="741, 350, 436, 46" CvTextArgument="Your Loan Details" CvType="Text" DesignTimeRectangle="618, 343, 683, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' innertext='Your Loan Details ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white' aaname='Your Loan Details ' check:innerText='Your Loan Details' /&gt;" Guid="97a29579-13e8-40a4-b57a-e4b9ac8b94ed" InformativeScreenshot="f6d7e656c950c884dd541088cb9f3c2c.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/_WJz49wVz0KR-sPaNCSm2A" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan details' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message (Retrieve Loan)" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;After clicking on Retrive Loan Details, check if page is loaded&quot; +retrieveLoanLoaded.ToString()]" />
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Loan Id Matched'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_2" Result="[loanIdMatched]" ScopeIdentifier="a1e9e924-f616-4321-b28f-efef3ce2070e" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/loans/detailView/true/680dca2f8534b8480b919994/5/100000/8/30/20000/someone@sample.com" CVScreenId="a603e659-4b54-4de5-89f4-1727be0dddca" ContentHash="wGxAutNAbUGNX1rYShkbdA" CvTextArea="824, 505, 372, 25" CvTextArgument="680dca2f8534b8480b919994" CvType="Text" DesignTimeRectangle="827, 501, 369, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="[&quot;&lt;webctrl id='quoteID' tag='SPAN' innertext='&quot; + testDataQueueItem.FirstOrDefault(Function(item) item.Content.ContainsKey(&quot;LoanID&quot;)).Content(&quot;LoanID&quot;).ToString() + &quot;' /&gt;&quot;]" FuzzySelectorArgument="&lt;webctrl id='quoteID' tag='SPAN' type='' class='' aaname='680dca2f8534b8480b919994' check:innerText='680dca2f8534b8480b919994' /&gt;" Guid="923436be-8f16-4f37-b64f-b04a0991b1a1" InformativeScreenshot="cebf3c7b93687f204615d1ec3a718d46.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/p1hlcJ3fYUG_cA7iJeBvOA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan details' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message (Loan ID Matched)" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;After clicking on Retrive Loan Details, check correct LoadID displayed&quot; +loanIdMatched.ToString()]" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" ContentHash="A-nDme3ZEk2klNOpiqZsFQ" IconBase64="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" InformativeScreenshot="6338843423233063080fe03bdab1ceb9.jpg" Reference="YeFHYRBJyE-e9YM6oWZCEQ/jDHlpd_n7Em6oaZ7irk5Zg" Selector="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" Version="V2" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="483.2,225.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message (Loan Status failed)" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;Loan Status failed: &quot; +exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="483.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

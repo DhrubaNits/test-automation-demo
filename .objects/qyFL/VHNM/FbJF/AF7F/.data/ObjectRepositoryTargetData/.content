@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qRNp9lK0MUq94R3fOE8bmg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/help" CVScreenId="08a0d0aa-aa4f-42db-bf7e-a5477119aa44" CvTextArea="1100, 730, 70, 21" CvTextArgument="$118.00" CvType="Text" DesignTimeRectangle="599, 735, 720, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='emailAddress' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='emailAddress' tag='INPUT' type='text' class='form-control uibank-input' placeholder='Enter the email address' aaname='Email Address' /&gt;" Guid="db4113cd-969f-428b-88c8-364470b3f7f1" IsResponsive="True" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Help' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="599, 711, 99, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Email Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email Address' tag='LABEL' type='' class='uibank-label' check:innerText='Email Address' /&gt;" Guid="0c626a1c-2756-4313-a405-c65d954fc7b4" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="a4bc5b9338f373670774ffa251069320.png" xmlns="">0fUlxBQO2hUSfNxWi-5cg2w</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="N8q8k0KU-EyuxT8lnpmd0Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/credit-cards" DesignTimeRectangle="1191, 693, 192, 61" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Apply Now -&amp;gt; ' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Apply Now -&amp;gt; ' tag='DIV' type='' class='btn btn-black' check:innerText='Apply Now -&amp;gt;' /&gt;" Guid="1a2eb003-d48e-47da-8417-8c6ff6ec41c5" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Credit Card' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="a63ad2fc-9c53-45ff-820a-5000abab40b3" CvTextArea="992, 702, 86, 17" CvTextArgument="Account" CvType="Text" DesignTimeRectangle="625, 689, 454, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H5' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H5' type='' class='card-title' aaname='UiBank Travel Rewards Card' check:innerText='UiBank Travel Rewards Card' /&gt;" Guid="6e0274f0-ea35-4343-b52f-0ad4154697bf" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="79c2712d6deb27ad44889bd948d739b0.png" xmlns="">0w_wyYevD5Uya9g7mRh3i2g</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

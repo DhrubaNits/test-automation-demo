@@ -1,0 +1,538 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Register_For_Account" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="registrationHeader" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="successRegistration" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="userName" Type="InArgument(x:String)" />
+    <x:Property Name="email" Type="InArgument(x:String)" />
+    <x:Property Name="browserType" Type="InArgument(x:String)" />
+    <x:Property Name="registerData" Type="InArgument(scg:IDictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Register_For_Account_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Register_For_Account" sap:VirtualizedContainerService.HintSize="541.6,5396.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch (Register For Account)" sap:VirtualizedContainerService.HintSize="502.4,5373.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Register For Account" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="500.8,4871.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,4704.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Register For Account''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" ContentHash="vDO5Qpji8UmNcvNjkFB7UQ" DesignTimeRectangle="643, 929, 101, 54" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aaname='Register For Account' id='emailHelp' tag='SMALL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Register For Account' id='emailHelp' tag='SMALL' type='' class='form-text text-white' check:innerText='Register For Account' /&gt;" Guid="fc82699f-9ffd-44b7-bcc6-956d16e9c822" InformativeScreenshot="83e6c4673702d9e997a2a75c921767de.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/3VLGLHoNhUyjimupKR9SQw" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Welcome' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check if the 'Registration' header is visible on Registration page" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[registrationHeader]" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="5c9411fa-d0fc-4041-a00d-6d1ffe8e0dfc" ContentHash="kIbmywkfikCiRnegMvH2tg" CvTextArea="767, 281, 381, 71" CvTextArgument="Registration" CvType="Text" DesignTimeRectangle="557, 276, 805, 73" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname='Registration' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center' aaname='Registration' check:innerText='Registration' /&gt;" Guid="738a484c-9b9c-4ffa-9911-b824f64495db" InformativeScreenshot="67fbf952173181242658dfb41f09c352.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/eucj4YvUsk2md6TZP_K2CA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message(Verify 'Registration' Header)" sap:VirtualizedContainerService.HintSize="433.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Check if the 'Registration' header is visible on Registration page: &quot; + registrationHeader.ToString()]" />
+                <Assign DisplayName="Assign (Random Email)" sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">["user" + Now.Ticks.ToString +"@gmail.com"]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Email Address*''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Text="[email]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="d4b39f21-6ce3-47c5-a00a-6c51aef2a1e8" ContentHash="zStKXCtpZEuo5oBQBMgBwQ" CvElementArea="716, 516, 484, 70" CvType="InputBox" DesignTimeRectangle="717, 517, 485, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='text' class='form-control uibank-input ng-pristine ng-invalid ng-touched' placeholder='Enter Email Address' aaname='Email Address*' /&gt;" Guid="d8c62e29-0e83-4b6f-a636-4ed1adf93a3a" InformativeScreenshot="8066a12d84154f1f1182ac7bb77fcd62.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/aCsfCdjrsE2rpInMW4K_0g" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="d4b39f21-6ce3-47c5-a00a-6c51aef2a1e8" CvTextArea="715, 496, 106, 15" CvTextArgument="Email Address*" CvType="Text" DesignTimeRectangle="717, 493, 105, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Email Address*' check:innerText='Email Address*' /&gt;" Guid="738fdf89-0957-4a6a-97ca-b89a02cd459b" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Password*''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Text="Dhruba@123" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="d4b39f21-6ce3-47c5-a00a-6c51aef2a1e8" ContentHash="ZBukdCsZYU-2ipBLCz2E6w" CvElementArea="718, 615, 483, 70" CvType="InputBox" DesignTimeRectangle="717, 616, 485, 68" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control uibank-input ng-untouched ng-pristine ng-invalid' placeholder='Password' aaname='Password*' /&gt;" Guid="cb09f087-1093-4ef5-9822-b8181d375cb1" InformativeScreenshot="ba5af1b589892668df38b8b3fd1fc495.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/ZA_Uu6Ky8UiDXlKW_oeTJw" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="d4b39f21-6ce3-47c5-a00a-6c51aef2a1e8" CvTextArea="715, 595, 75, 13" CvTextArgument="Password*" CvType="Text" DesignTimeRectangle="717, 592, 74, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password*' tag='LABEL' type='' class='uibank-label' check:innerText='Password*' /&gt;" Guid="3148b630-1560-497c-930e-4b18938bcca8" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''First Name''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Text="[registerData(&quot;FirstName&quot;).ToString()]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" ContentHash="38kqkAPYhUyp1ETVEETpOA" CvElementArea="571, 420, 374, 70" CvType="InputBox" DesignTimeRectangle="572, 421, 372, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='firstName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='firstName' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter your first name' aaname='First Name' /&gt;" Guid="58f9ff1d-b480-4cf8-808c-8f4d197de805" InformativeScreenshot="8975ce9cd17deec066f2cee0d2f0e1e2.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/aT1NrKzfOkmw-CvXx4Kw4Q" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="569, 401, 77, 13" CvTextArgument="First Name" CvType="Text" DesignTimeRectangle="572, 398, 74, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' type='' class='uibank-label' check:innerText='First Name' /&gt;" Guid="3c5b9800-5ad6-44b0-98fd-ed8b3cf8247f" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Last Name''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Text="[registerData(&quot;LastName&quot;).ToString()]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" ContentHash="3y479C0WOkWV2sSy8TgmMg" CvElementArea="974, 420, 374, 70" CvType="InputBox" DesignTimeRectangle="974, 421, 373, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='lastName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='lastName' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter your last name' aaname='Last Name' /&gt;" Guid="9414e4ee-3497-4594-99e3-224520a53797" InformativeScreenshot="d715f44c4db066ec00c05991ceb860b5.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/Yq6gJecyykGzWeu1ppFl3w" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="972, 401, 77, 13" CvTextArgument="Last Name" CvType="Text" DesignTimeRectangle="974, 398, 75, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' type='' class='uibank-label' check:innerText='Last Name' /&gt;" Guid="e197a2d3-9b03-4c1c-9cbe-7c6fb00525c8" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Middle Name Or Initial''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Text="[registerData(&quot;MiddleName&quot;).ToString()]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" ContentHash="e5otDeZ7w0GLeu1nI2662Q" CvElementArea="570, 543, 374, 70" CvType="InputBox" DesignTimeRectangle="572, 544, 372, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='middleName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='middleName' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter your middle name or initial' aaname='Middle Name Or Initial' /&gt;" Guid="aa5cbc0d-b12b-4b59-9fd1-51c8c4963a7a" InformativeScreenshot="42a81d6a51fc14a515041ebdc7bf142a.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/mPJhJf_UzUGL12rW54JHgQ" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="570, 522, 154, 13" CvTextArgument="Middle Name Or Initial" CvType="Text" DesignTimeRectangle="572, 520, 153, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Middle Name Or Initial' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Middle Name Or Initial' tag='LABEL' type='' class='uibank-label' check:innerText='Middle Name Or Initial' /&gt;" Guid="d0d8c0b9-e28a-4278-b616-239ed6d1a6fe" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NSelectItem DisplayName="Select Item ''Sex*''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[registerData(&quot;Sex&quot;).ToString()]" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="3">
+                      <x:String>Select your sex</x:String>
+                      <x:String>Male</x:String>
+                      <x:String>Female</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" ContentHash="FxZO-LFhxkOZeXiYX8VJAg" CvElementArea="973, 543, 375, 70" CvType="InputBox" DesignTimeRectangle="974, 544, 373, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='sex' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sex' tag='SELECT' type='text' class='form-control uibank-input select-color ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="90192309-cc69-4478-bcca-e7f23125e9e2" InformativeScreenshot="861d03ca4bf506b780533be2af4b6c03.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/Dx5IRVrw9UW6MJfgpK9vkg" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="972, 522, 32, 13" CvTextArgument="Sex*" CvType="Text" DesignTimeRectangle="974, 520, 31, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sex*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sex*' tag='LABEL' type='' class='uibank-label' check:innerText='Sex*' /&gt;" Guid="094eaa54-c5d3-49a4-9d9b-225a80dc52dd" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NSelectItem DisplayName="Select Item ''Title*''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Mr" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:String>Select your title</x:String>
+                      <x:String>Ms</x:String>
+                      <x:String>Mrs</x:String>
+                      <x:String>Mr</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" ContentHash="i_zplw1XKUaGAfaLdouRAQ" CvElementArea="570, 665, 374, 70" CvType="InputBox" DesignTimeRectangle="572, 666, 372, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='title' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='title' tag='SELECT' type='text' class='form-control uibank-input select-color ng-untouched ng-pristine ng-invalid' aaname='Title*' /&gt;" Guid="e0e063cc-2613-473e-af34-e37b889a3e76" InformativeScreenshot="d13710ba4916c9d0c3a35151933074f5.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/pAEmpaV_Qk2tic1rixpn1Q" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="569, 645, 37, 15" CvTextArgument="Title*" CvType="Text" DesignTimeRectangle="572, 642, 35, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Title*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Title*' tag='LABEL' type='' class='uibank-label' check:innerText='Title*' /&gt;" Guid="a51945c3-3b72-4aa3-8fce-18ebe56ed0b7" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NSelectItem DisplayName="Select Item ''Employment Status*''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[registerData(&quot;EmploymentStatus&quot;).ToString()]" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:String>Select your employment status</x:String>
+                      <x:String>Full-time</x:String>
+                      <x:String>Part-time</x:String>
+                      <x:String>Unemployed</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" ContentHash="jsThQ03sP0qqkxD9mKTR0g" CvElementArea="973, 666, 374, 69" CvType="InputBox" DesignTimeRectangle="974, 666, 373, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='employmentStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='employmentStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="159f2288-bea7-49f4-9859-a77c4f34b2b7" InformativeScreenshot="148741bb9dd108d589fbdeaafdc8cda9.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/dictZpFHIEqaJmEavPE-uA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="972, 646, 145, 16" CvTextArgument="Employment Status*" CvType="Text" DesignTimeRectangle="974, 642, 144, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Employment Status*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employment Status*' tag='LABEL' type='' class='uibank-label' check:innerText='Employment Status*' /&gt;" Guid="fa59b2e7-f383-4227-b9c4-0d97feb36caf" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Date of birth (MM/DD/YY)''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Text="[registerData(&quot;DOB&quot;).ToString()]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" ContentHash="GbeiqlTEMEWR2D_WWkP5Aw" CvElementArea="571, 789, 373, 69" CvType="InputBox" DesignTimeRectangle="572, 789, 372, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='age' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='age' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter date in MM/DD/YY format' aaname='Date of birth (MM/DD/YY)' /&gt;" Guid="a6bf14b1-09d5-4b1b-9aff-bd583c10ed8e" InformativeScreenshot="b4140016ed3e1bc8a2e6daaaf916ba08.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/xTVrV1DmxUOZroGs3mkcbw" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="570, 765, 178, 20" CvTextArgument="Date of birth (MM/DD/YY)" CvType="Text" DesignTimeRectangle="572, 765, 176, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Date of birth ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Date of birth ' tag='LABEL' type='' class='uibank-label' check:innerText='Date of birth (MM/DD/YY)' /&gt;" Guid="0f1b410a-df57-4075-a107-9e7e43e552aa" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NSelectItem DisplayName="Select Item ''Marital Status*''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="Married" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="5">
+                      <x:String>Select your marital status</x:String>
+                      <x:String>Single</x:String>
+                      <x:String>Married</x:String>
+                      <x:String>Divorced</x:String>
+                      <x:String>Widowed</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="86ac34a2-74b7-46b0-a6e0-08658ce4aeb5" ContentHash="U2LGazP9_kWsXAW5MIjUkw" CvElementArea="973, 789, 375, 70" CvType="InputBox" DesignTimeRectangle="974, 789, 373, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="9de82e57-aca5-4c2c-a871-0dd3f63c9e51" InformativeScreenshot="5a09790a1698f9890193dcf8819c0032.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/FuJPGiQzr0if6OVjIm46AA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="86ac34a2-74b7-46b0-a6e0-08658ce4aeb5" CvTextArea="972, 767, 105, 15" CvTextArgument="Marital Status*" CvType="Text" DesignTimeRectangle="974, 765, 103, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Marital Status*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Marital Status*' tag='LABEL' type='' class='uibank-label' check:innerText='Marital Status*' /&gt;" Guid="b5f9a8a1-1d15-4500-a561-b204513a54b9" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Number of Dependents''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Text="2" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="86ac34a2-74b7-46b0-a6e0-08658ce4aeb5" ContentHash="s_K0CAQHzUuFPW7v7Xs_ew" CvElementArea="570, 911, 375, 69" CvType="InputBox" DesignTimeRectangle="572, 911, 372, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='numberOfDependents' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='numberOfDependents' tag='INPUT' type='number' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='How many dependents do you claim?' aaname='' /&gt;" Guid="310c3b10-473a-4358-98e5-6b6d4e4f47a2" InformativeScreenshot="bd520be0bd6137a07eb385dabb0eda88.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/j2EHUVPj20aB_FyBQp3dgA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="86ac34a2-74b7-46b0-a6e0-08658ce4aeb5" CvTextArea="569, 891, 165, 17" CvTextArgument="Number of Dependents" CvType="Text" DesignTimeRectangle="572, 888, 163, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Number of Dependents' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Number of Dependents' tag='LABEL' type='' class='uibank-label' check:innerText='Number of Dependents' /&gt;" Guid="7857f6c6-9f7c-4cd2-ad04-03ecc5fadb17" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <Assign DisplayName="Randomly generated Username" sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[userName]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[(Chr(New Random().Next(65, 91))).ToString() + New String(Enumerable.Range(0, 5).Select(Function(i) Chr(New Random().Next(97, 123))).ToArray())]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Username*''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Text="[userName]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="86ac34a2-74b7-46b0-a6e0-08658ce4aeb5" ContentHash="gYySuOBGzEGmCq2yhgBf2g" CvElementArea="974, 911, 373, 69" CvType="InputBox" DesignTimeRectangle="974, 911, 373, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-invalid' placeholder='Enter your username' aaname='Username*' /&gt;" Guid="0643d962-89d3-431a-8582-a98f9a7e23a6" InformativeScreenshot="557a00b9703961e98003727ac1d40cfe.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/-VqEEHrWCEClLSij7FqkmQ" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="86ac34a2-74b7-46b0-a6e0-08658ce4aeb5" CvTextArea="972, 891, 80, 13" CvTextArgument="Username*" CvType="Text" DesignTimeRectangle="974, 888, 79, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Username*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Username*' tag='LABEL' type='' class='uibank-label' check:innerText='Username*' /&gt;" Guid="9865bcb8-08d5-43bc-be73-7be8f504890d" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NCheck Action="Check" DisplayName="Check/Uncheck ''I confirm that I agree …''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NCheck.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="cbeb560f-4d0a-46ac-b4a1-913aac1026df" CvElementArea="952, 737, 23, 23" CvType="CheckBox" DesignTimeRectangle="954, 738, 20, 20" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='agreeCheckbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='agreeCheckbox' tag='INPUT' type='checkbox' class='form-check-input ng-untouched ng-pristine ng-valid' aaname=' I confirm that I agree to the Privacy Policy' /&gt;" Guid="1e319aca-7637-4ed0-992d-25300b9917a1" InformativeScreenshot="69b8fba5117fe46e180920fb46ed5976.png" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="cbeb560f-4d0a-46ac-b4a1-913aac1026df" CvTextArea="766, 770, 416, 25" CvTextArgument="I confirm that I agree to the Privacy Policy" CvType="Text" DesignTimeRectangle="768, 766, 413, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' I confirm that I agree to the ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' I confirm that I agree to the ' tag='LABEL' type='' class='form-check-label text-center' check:innerText='I confirm that I agree to the Privacy Policy' /&gt;" Guid="790e71d1-170a-4d97-804f-8abd1ad3ee52" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NCheck.Target>
+                </uix:NCheck>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Register''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account" CVScreenId="cbeb560f-4d0a-46ac-b4a1-913aac1026df" ContentHash="XFrUosn_d0iK7x8V_CtNmA" CvElementArea="759, 839, 399, 61" CvTextArea="915, 857, 88, 25" CvTextArgument="Register" CvType="Button" DesignTimeRectangle="759, 839, 400, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-white form-button btn-xl' aaname='Register' check:innerText='Register' /&gt;" Guid="29a0955a-3465-48fd-b93c-2b5247710e19" InformativeScreenshot="f5469c306a786d5c09f7e264b65df1f2.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/oVdB4aiMckCsO015MjoAFw" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Welcome To The UiBank F…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_2" Result="[successRegistration]" ScopeIdentifier="2543668c-93bf-42d1-b107-1a6f7c118b08" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/register-account/success/Dhruba123" CVScreenId="46c0febc-4af6-402f-ab4d-23a51c76e923" ContentHash="zY2yp40gykec0hmNq0LJzA" CvTextArea="646, 462, 640, 47" CvTextArgument="Welcome To The UiBank Family!" CvType="Text" DesignTimeRectangle="624, 458, 690, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' aaname=' Welcome To The UiBank Family! ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname=' Welcome To The UiBank Family! ' check:innerText='Welcome To The UiBank Family!' /&gt;" Guid="b27bc94f-c566-4b87-9fc0-a08496aea030" InformativeScreenshot="425390f119d186b4b1d84866c81d1f41.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/0JsCBl3NmE2YNsMtYfmYaA" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register success' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message(Verify 'Success' Registartion)" sap:VirtualizedContainerService.HintSize="433.6,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Verify successful registration confirmation message: &quot; + successRegistration.ToString()]" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" ContentHash="aHNIYxOPzUOS9QF7ePgvPg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAMAAAALgmiIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABgUExURfpGFvyMbv////7Rxf/z8PtpQv/5+PyumfyAX/x1UftjO/7WzP3Lvf25p/7o4vtdM/2/r/2dhPx6WP2zoPtXLP7u6fpMHf7i2vtvSfyokf7c0/yGZvpSJf2XfP3Ftvyiiq2qGj8AAAMzSURBVHhe7ZvZcqMwEEUJeMMexx7v8fr/fxnAF4O6JRNVSaOZmntekrQIfQxCkqHJHn8rGSGEEEIIqbhhdZSADyg4+MyTUUDBAc0s0MwfmvlDM39o5g/N/EluNiom+E2Q1my7abJstvi7T0qz4wlZsux0RKwjodn2gCQNX4i+SGd2NsSybIF4SzKzyRgpWubiSkhm9oUMHeJ8JjPren/LCi0gmdkVGXqYyVKZ7ZGgT4G2J15mi8JkhLiLI7Zr6Q1atrxLtD3xMlsh2mJ+SI38MvuBeMUZoT6/0PYklVkuRrMac0RLZiaHsyy7mgNaMrMbYh0XtIBkZiO5s+seLSCZmcpsXpkpzcT8JM5lUrN8MUe8mpnMEaMmpVk+mc5quflsallxJzVrOOOnJL2ZC5o10Ixmdv5LsyFtmjXQjGZ2aFZBswaa0QzQrIFmNLNDswqaNdCMZoBmDTSjmR3TrLt//0Q+9pD8ObMS0RZfsxviDUHNZoi2PBB3IT+JsX1QM7kzXzOj/CeomXy5Te5M8rZfBjWT1R9jxB2MsNkL41oOarZEtOXgKB0Dat/Gg/KgZndEX7ieZj2ZYqsXxlPfoGbq9KjSLINn2VuHWV4T1EwVDMwRt7KXhQ9m7rBmqmBAFo31USfTHJjDmslLQD/97lAFZmJnYc0+Ee64o0Wj3uwVVVxhzdRqI9u5Bo6jKq8RqQOb6cqUsb2g6lN9Bnl4A5vp02lXs4jJCSOwmVpuVKzWaOvY7tDWY4q2ltBmtrqx7HTv97bJWs7kNapDhjazVGfVHGbLojjn56KYypEfyEMW3kzNnT/joHpjcDO1HPwZ6pBFMNtbevcgMm1FeLOhf7EhK59rIpjpeWeIg66xj2Pm3dWsk2sUs5FjZLBz0CNxTRQzvds37BxruEhmliJ6B2NR8vkillm+thQRW7g4v15FM8v3t2G38s3donhm1VJnoLed3t7FimlWrTwu7uO2cS/EG+KaVSx+W1Yf85uxLrIS3axiv348NmVZzaerspw9HkvX5WhwxxvxLfIQhzCLA838oZk/NPOHZv7QzB+a+UMzf2jmzz9rdiqTYb+5SQghhJBBsuwbfx+VBGVWUxIAAAAASUVORK5CYII=" InformativeScreenshot="62092cc22852ea183ba5db1fde933dd0.jpg" Reference="YeFHYRBJyE-e9YM6oWZCEQ/cWqpSrwt5ky73djnrCxxGg" Selector="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Welcome' /&gt;&quot;, browserType)]" Version="V2" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="500.8,225.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message (Register account failed)" sap:VirtualizedContainerService.HintSize="467.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;Register for account failed: &quot; +exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="500.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

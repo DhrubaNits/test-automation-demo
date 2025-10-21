@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DZz6p4rjQU-fzwITYBSGjg" Reference="YeFHYRBJyE-e9YM6oWZCEQ/tzvuh0XotEenv5wdNij92Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts/transfer-money" CVScreenId="74201469-6383-4f41-86c5-a3099b992ec5" CvTextArea="732, 254, 265, 23" CvTextArgument="Review Your Transfer" CvType="Text" DesignTimeRectangle="668, 238, 328, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='confirmTransferModal' tag='H5' aaname=' Review Your Transfer ' /&gt;" FuzzySelectorArgument="&lt;webctrl id='confirmTransferModal' tag='H5' type='' class='modal-title text-white' aaname=' Review Your Transfer ' check:innerText='Review Your Transfer' /&gt;" Guid="a9252a06-bc8e-4e31-aeba-8c9cb5b5fbc9" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Transfer money' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2887f0edf8e4a921de3cde994aad0ca5.png" xmlns="">0D-3B5pnABk6GCTcNZESRXg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Your transfer was succe…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "u6Oc29YFO0GlL7ORzUZ4-A",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/u6Oc29YFO0GlL7ORzUZ4-A",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/U6jm_aWBck2sRcTSWbgZCg",
+  "Created": "2025-04-27T10:56:07.2520919Z",
+  "Updated": "2025-04-27T10:56:07.2520919Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

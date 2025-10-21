@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QCexZRv5_U-aSlABCKf6_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts" DesignTimeRectangle="1320, 705, 167, 86" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Transfer Funds →' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Transfer Funds →' tag='A' type='' class='btn apply-button' check:innerText='Transfer Funds →' /&gt;" Guid="3f6a009f-5dd2-4561-8f74-5fb1591d3c57" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank - Accounts' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="e6bbd491275bb7b3980408c881d70169.png" xmlns="">0I5Sir4y850KAzfsLjDiQyg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

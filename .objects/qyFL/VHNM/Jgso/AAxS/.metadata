@@ -1,0 +1,14 @@
+﻿{
+  "Name": "'Apply For New Account'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "AAxS_8TGekOw6WrTW7nHnQ",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/AAxS_8TGekOw6WrTW7nHnQ",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/JgsoBXre5ku8O38exfLREA",
+  "Created": "2025-04-26T18:46:09.9102989Z",
+  "Updated": "2025-04-26T18:46:09.9102989Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

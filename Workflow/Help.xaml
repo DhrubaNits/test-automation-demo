@@ -1,0 +1,286 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TC08___Verify_that_the_user_is_able_to_submit_a_query_via_the_Help_page" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="helpSuccess" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="helpLoaded" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="browserType" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>TC08___Verify_that_the_user_is_able_to_submit_a_query_via_the_Help_page_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TC08___Verify_that_the_user_is_able_to_submit_a_query_via_the_Help_page" sap:VirtualizedContainerService.HintSize="847.2,2828" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch (Help)" sap:VirtualizedContainerService.HintSize="484.8,2804.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Help" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,2302.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="df83032c-916c-47e4-a25e-797fb0852d46" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2096" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Help''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df83032c-916c-47e4-a25e-797fb0852d46" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts" CVScreenId="08a0d0aa-aa4f-42db-bf7e-a5477119aa44" ContentHash="OV88MLxQekyHFpz7ptE1-g" CvTextArea="1364, 225, 51, 26" CvTextArgument="Help" CvType="Text" DesignTimeRectangle="1355, 210, 70, 54" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Help' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Help' tag='A' type='' class='nav-link text-dark' check:innerText='Help' /&gt;" Guid="a639c6d7-aacf-4a56-a7ff-dfd4e9ae9f6c" InformativeScreenshot="0bebc2c28f30c2784f712fc0f14091c8.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/Twb-7CaJWUuqCLkMoBvH4A" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Need Some Help'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_2" Result="[helpLoaded]" ScopeIdentifier="df83032c-916c-47e4-a25e-797fb0852d46" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/help" CVScreenId="34a643f6-a576-48b5-8015-030ccb88bca5" ContentHash="WDSRJZjiwUSWEMZS2DLKQw" CvTextArea="692, 424, 533, 66" CvTextArgument="Need Some Help?" CvType="Text" DesignTimeRectangle="397, 413, 1125, 72" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' aaname='Need Some Help?' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='text-white header' aaname='Need Some Help?' check:innerText='Need Some Help?' /&gt;" Guid="96818616-9355-49a0-b82e-c897af55ef36" InformativeScreenshot="6b3e70f10cb2faead05106cbcbca53a5.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/qjo_Ib5Lg02hFhMjPEn19g" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Help' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message (Verify Help Load)" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Verify that the 'Need Some Help?' page is loaded after clicking on Help lin from the top navigation&quot; +helpLoaded.ToString()]" />
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Full Name''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="df83032c-916c-47e4-a25e-797fb0852d46" Text="Dhruba" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/help" ContentHash="kqNYUfDIUUuazSv3XBHqkw" DesignTimeRectangle="599, 616, 720, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fullName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fullName' tag='INPUT' type='text' class='form-control uibank-input' placeholder='Enter full name' aaname='Full Name' /&gt;" Guid="ba675451-74e7-4aff-b032-62ee22cd70f7" InformativeScreenshot="83f271f544f95ee23cd57b863513afee.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/ymUyep-z8EWg8pYJvFzfKQ" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Help' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="599, 592, 70, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Full Name' check:innerText='Full Name' /&gt;" Guid="74231a11-96d4-4238-aa04-6b1dd1a6cc0d" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Email Address''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="df83032c-916c-47e4-a25e-797fb0852d46" Text="dj@gmail.com" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/help" CVScreenId="08a0d0aa-aa4f-42db-bf7e-a5477119aa44" ContentHash="qRNp9lK0MUq94R3fOE8bmg" CvTextArea="1100, 730, 70, 21" CvTextArgument="$118.00" CvType="Text" DesignTimeRectangle="599, 735, 720, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='emailAddress' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='emailAddress' tag='INPUT' type='text' class='form-control uibank-input' placeholder='Enter the email address' aaname='Email Address' /&gt;" Guid="db4113cd-969f-428b-88c8-364470b3f7f1" InformativeScreenshot="a4bc5b9338f373670774ffa251069320.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/AF7FIHGl5k2FaWF_HpzMwg" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Help' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="599, 711, 99, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Email Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email Address' tag='LABEL' type='' class='uibank-label' check:innerText='Email Address' /&gt;" Guid="0c626a1c-2756-4313-a405-c65d954fc7b4" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Tell Us About Your Prob…''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="df83032c-916c-47e4-a25e-797fb0852d46" Text="Not able to transfer money" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/help" ContentHash="sAJInPLBV0yIXaxTeSwMyw" DesignTimeRectangle="599, 853, 720, 167" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='message' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='message' tag='TEXTAREA' type='text' class='form-control uibank-input' placeholder='How can we help' aaname='Tell Us About Your Problem' /&gt;" Guid="61c6fe4b-ac91-4458-a4e7-23fa3eadc74d" InformativeScreenshot="3b65093e59a44f17ded28689a9706781.png" IsResponsive="True" Reference="YeFHYRBJyE-e9YM6oWZCEQ/5KjFHZ0mPECp8hNdW44EGg" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Help' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="599, 830, 187, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Tell Us About Your Problem' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Tell Us About Your Problem' tag='LABEL' type='' class='uibank-label' check:innerText='Tell Us About Your Problem' /&gt;" Guid="f7725c1b-c319-4b75-84fe-b658eafbd54c" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Contact Us''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df83032c-916c-47e4-a25e-797fb0852d46" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/help" CVScreenId="9a22963d-4df5-4dd0-8b5f-ad270ea750fc" ContentHash="yb36URjdxkqy9E9kU1nrFA" CvElementArea="856, 708, 206, 66" CvTextArea="901, 732, 115, 17" CvTextArgument="Contact Us" CvType="Button" DesignTimeRectangle="859, 710, 200, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='form-button btn btn-xl btn-white' aaname=' Contact Us ' check:innerText='Contact Us' /&gt;" Guid="aa7a91a5-6f16-4770-aafc-a8ce3a3fedbc" InformativeScreenshot="22b992ee96a88288810c6748c1f61d10.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/z_qpXiiWTEqO70yCyJ-GLg" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Help' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'We've Received Your Mes…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[helpSuccess]" ScopeIdentifier="df83032c-916c-47e4-a25e-797fb0852d46" Version="V4">
+                  <uix:NCheckElement.Target>
+                    <uix:TargetAnchorable BrowserURL="uibank.uipath.com/help/confirmation" ContentHash="0XGO-jljdUy7JRWwIBd31w" DesignTimeRectangle="618, 350, 683, 144" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname='We&amp;apos;ve Received Your Message' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white header' aaname='We&amp;apos;ve Received Your Message' check:innerText='We&amp;apos;ve Received Your Message' /&gt;" Guid="e9d8a8e0-a006-42b7-87d6-45c9b6279018" InformativeScreenshot="72f41c5e9bd32861fa73d05aae63bc8a.png" Reference="YeFHYRBJyE-e9YM6oWZCEQ/XWsLOvLfN0WbkLFuGXgw9w" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Confirmation' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                  </uix:NCheckElement.Target>
+                </uix:NCheckElement>
+                <ui:LogMessage DisplayName="Log Message (Help Success)" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;After submitting the Help form, verify that the confirmation message 'We've Received Your Message' is displayed&quot; + helpSuccess.ToString()]" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" ContentHash="cJIOAc8gsEW_0P_a6fEwcg" IconBase64="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" InformativeScreenshot="6338843423233063080fe03bdab1ceb9.jpg" Reference="YeFHYRBJyE-e9YM6oWZCEQ/FbJF_-Cd9E6KMmJiloTLbg" Selector="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Accounts' /&gt;&quot;, browserType)]" Version="V2" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="483.2,225.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message (Help failed)" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Help failed: &quot; +exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="483.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

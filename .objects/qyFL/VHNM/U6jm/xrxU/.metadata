@@ -1,0 +1,14 @@
+﻿{
+  "Name": "'Confirm Transfer →'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "xrxUs7vGlkK7cQJFT330uA",
+  "Reference": "YeFHYRBJyE-e9YM6oWZCEQ/xrxUs7vGlkK7cQJFT330uA",
+  "ParentRef": "YeFHYRBJyE-e9YM6oWZCEQ/U6jm_aWBck2sRcTSWbgZCg",
+  "Created": "2025-04-27T10:56:02.4668089Z",
+  "Updated": "2025-04-27T10:56:02.4668089Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

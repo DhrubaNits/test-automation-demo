@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FxZO-LFhxkOZeXiYX8VJAg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/register-account" CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvElementArea="973, 543, 375, 70" CvType="InputBox" DesignTimeRectangle="974, 544, 373, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='sex' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sex' tag='SELECT' type='text' class='form-control uibank-input select-color ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="90192309-cc69-4478-bcca-e7f23125e9e2" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="4dc7a2d3-fb81-494c-966f-7c0b0a1aa3dd" CvTextArea="972, 522, 32, 13" CvTextArgument="Sex*" CvType="Text" DesignTimeRectangle="974, 520, 31, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sex*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sex*' tag='LABEL' type='' class='uibank-label' check:innerText='Sex*' /&gt;" Guid="094eaa54-c5d3-49a4-9d9b-225a80dc52dd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="861d03ca4bf506b780533be2af4b6c03.png" xmlns="">0KBM0WixNPUS0ZV3QFiKjyg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

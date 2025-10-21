@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uD1HxVApHEiQXoA-HonM-g" Reference="YeFHYRBJyE-e9YM6oWZCEQ/9XtQEaNWn0KrcO5jb5lqxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/mobile-banking" CVScreenId="7a81e955-ad68-46c2-b85c-0089194b9438" CvTextArea="641, 762, 634, 24" CvTextArgument="With UiBank, you can access our mobile app to transfer money," CvType="Text" DesignTimeRectangle="641, 762, 635, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' aaname=' With UiBank, you can access our mobile app to transfer money, make payments, schedule notifications, and so much more! ' /&gt;" Guid="6e9da3ea-5029-4dd3-8407-4a277c6e508e" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank - Mobile' /&gt;&quot;, browserType)]" SearchSteps="Selector, CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="7a81e955-ad68-46c2-b85c-0089194b9438" CvTextArea="657, 791, 601, 23" CvTextArgument="make payments, schedule notifications, and so much more!" CvType="Text" DesignTimeRectangle="657, 792, 601, 24" ElementType="Text" Guid="496be8a9-c102-4bc5-b210-294995731ec8" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3936b705662f3cb26653d9c0eda72549.png" xmlns="">0T1tHmvIlpUS0h7PccvdVug</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8PtOG1bzN0OHs007Rgvo1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/loans/apply" DesignTimeRectangle="641, 888, 636, 68" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='income' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='income' tag='INPUT' type='number' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='How much do you make before taxes a year?' aaname='Current Yearly Income (Before Taxes)' /&gt;" Guid="de96c6e6-713f-40d5-842a-4bb92459f431" IsResponsive="True" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Loan Apply' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="641, 865, 261, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Current Yearly Income (Before Taxes)' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Current Yearly Income (Before Taxes)' tag='LABEL' type='' class='uibank-label' check:innerText='Current Yearly Income (Before Taxes)' /&gt;" Guid="d5f1cab5-50b7-46bd-aa2b-5f34a61bd2a1" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="59e4b5563715076270dcaed405f989b6.png" xmlns="">03SRzYFofOE2s35Yg_A5mgQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

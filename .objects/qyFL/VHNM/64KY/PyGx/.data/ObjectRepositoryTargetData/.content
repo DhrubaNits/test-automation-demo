@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YiCk932pOE-0xUZx5Y5sgg" Reference="YeFHYRBJyE-e9YM6oWZCEQ/PyGxKk4XpUe2MfpIrWlvDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" DesignTimeRectangle="786, 732, 328, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='I agree to the Privacy Policy →' parentid='mat-mdc-dialog-2' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='I agree to the Privacy Policy →' parentid='mat-mdc-dialog-2' tag='BUTTON' type='button' class='btn center-button btn-black' check:innerText='I agree to the Privacy Policy →' /&gt;" Guid="f999f75c-a451-4841-b07b-64cc2b7f87ae" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-*Welcome' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="02d53923-1208-437c-b88e-89c2f71781cb" CvTextArea="896, 692, 316, 76" CvTextArgument="checking" CvType="Text" DesignTimeRectangle="1066, 750, 20, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='mat-mdc-dialog-2' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mat-mdc-dialog-2' tag='STRONG' type='' class='' aaname='→' check:innerText='→' /&gt;" Guid="5be96ad2-6e05-4388-92a0-a5bdb36ef9b2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="97123d049b2bd227c4915d8e1702254c.png" xmlns="">04tFkiEQMMEmSTVD5jtXrSA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

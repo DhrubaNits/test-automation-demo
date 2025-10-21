@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sAJInPLBV0yIXaxTeSwMyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/help" DesignTimeRectangle="599, 853, 720, 167" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='message' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='message' tag='TEXTAREA' type='text' class='form-control uibank-input' placeholder='How can we help' aaname='Tell Us About Your Problem' /&gt;" Guid="61c6fe4b-ac91-4458-a4e7-23fa3eadc74d" IsResponsive="True" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Help' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="599, 830, 187, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Tell Us About Your Problem' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Tell Us About Your Problem' tag='LABEL' type='' class='uibank-label' check:innerText='Tell Us About Your Problem' /&gt;" Guid="f7725c1b-c319-4b75-84fe-b658eafbd54c" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="3b65093e59a44f17ded28689a9706781.png" xmlns="">00UJDb_2cEUiadpe5iOmkgw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

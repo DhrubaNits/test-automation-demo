@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0XGO-jljdUy7JRWwIBd31w" Reference="YeFHYRBJyE-e9YM6oWZCEQ/zRl3bhTRJUCRPVo_LrEFQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/help/confirmation" DesignTimeRectangle="618, 350, 683, 144" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' aaname='We&amp;apos;ve Received Your Message' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white header' aaname='We&amp;apos;ve Received Your Message' check:innerText='We&amp;apos;ve Received Your Message' /&gt;" Guid="e9d8a8e0-a006-42b7-87d6-45c9b6279018" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Confirmation' /&gt;&quot;, browserType)]" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="72f41c5e9bd32861fa73d05aae63bc8a.png" xmlns="">0jDFsM3RZcEiSsuGaJ2KiVQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

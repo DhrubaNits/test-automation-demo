@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="t3nowgMbbkKeCIgcULFnYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/accounts/account-apply" DesignTimeRectangle="459, 727, 1000, 68" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='typeOfAccount' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='typeOfAccount' tag='SELECT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-invalid' aaname='Type of Account' /&gt;" Guid="a79c6aa9-3bb5-41b1-b8be-8f15acd17563" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Apply' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="459, 704, 114, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Type of Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Type of Account' tag='LABEL' type='' class='uibank-label' check:innerText='Type of Account' /&gt;" Guid="03fcbfea-bc0c-4d74-9d12-36770b7c30f4" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="3cae4238ed8a05865fff4125fb3c5eae.png" xmlns="">0DBFuAEwM-kOhHioUEeKjZQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

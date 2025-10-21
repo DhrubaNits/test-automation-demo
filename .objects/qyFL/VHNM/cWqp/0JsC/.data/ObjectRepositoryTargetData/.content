@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zY2yp40gykec0hmNq0LJzA" Reference="YeFHYRBJyE-e9YM6oWZCEQ/8D_bhjeJi06Ff8cmlMzN0w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/register-account/success/Dhruba123" CVScreenId="46c0febc-4af6-402f-ab4d-23a51c76e923" CvTextArea="646, 462, 640, 47" CvTextArgument="Welcome To The UiBank Family!" CvType="Text" DesignTimeRectangle="624, 458, 690, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' aaname=' Welcome To The UiBank Family! ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname=' Welcome To The UiBank Family! ' check:innerText='Welcome To The UiBank Family!' /&gt;" Guid="b27bc94f-c566-4b87-9fc0-a08496aea030" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='{0}' title='UiBank-Register success' /&gt;&quot;, browserType)]" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="425390f119d186b4b1d84866c81d1f41.png" xmlns="">0f5ZOMygcx0-Ru1fZa9SVYQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="browserType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
