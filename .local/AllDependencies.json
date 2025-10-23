@@ -19558,16 +19558,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Acer\\.nuget\\packages\\": {}
+    "C:\\Users\\tinku\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "UiBankWebTestAutomation",
       "projectName": "UiBankWebTestAutomation",
-      "projectPath": "C:\\Users\\Acer\\Documents\\UiPath\\UiBankWebTestAutomation\\.local",
-      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\Documents\\UiPath\\UiBankWebTestAutomation\\.local",
-      "UsingMicrosoftNETSdk": false
+      "projectPath": "C:\\UiBankWebTestAutomation\\.local",
+      "packagesPath": "C:\\Users\\tinku\\.nuget\\packages\\",
+      "outputPath": "C:\\UiBankWebTestAutomation\\.local"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -19593,7 +19592,7 @@
             "version": "[1.21.1, 1.21.1]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Acer\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\tinku\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
